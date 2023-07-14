@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@picocss/pico": "^1.5.10",
+    "install": "^0.13.0",
+    "npm": "^9.8.0"
+  }
+}
