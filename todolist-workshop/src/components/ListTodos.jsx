@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ListTodos({todos, changeTodoStatus}) {
+export default function ListTodos({todos, changeTodoStatus, deleteTodo}) {
     
     
     return (
@@ -16,6 +16,7 @@ export default function ListTodos({todos, changeTodoStatus}) {
             onChange={ () => {changeTodoStatus(todo.id)}}
             /> 
             {todo.name}
+            <button role="button" onClick={ () => {deleteTodo(todo.id)}}>Delete</button>
             </li>
             ))}
         </ul>
