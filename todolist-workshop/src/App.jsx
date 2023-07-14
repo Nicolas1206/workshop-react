@@ -1,14 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import Header from './components/Header.jsx';
+import AddTodo from './components/AddTodo.jsx'
+import ListTodos from './components/ListTodos.jsx';
 function App() {
   
 
   return (
    
     <main className='container'>
-      <h1>hello world</h1>
+        <Header />
+
+         <AddTodo />
+
+         <ListTodos />
+
       </main>
     
   )
