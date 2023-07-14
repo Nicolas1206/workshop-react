@@ -69,8 +69,9 @@ const deleteTodo = (id) => {
   }, [todos, firstLoad]);
 
   useEffect(() => {
+    
     const initialTodos = JSON.parse(window.localStorage.getItem(LSKEY + '.todos'))
-    setTodos(initialTodos);
+    setTodos(initialTodos ?? []);
   }, [])
 
   return (
